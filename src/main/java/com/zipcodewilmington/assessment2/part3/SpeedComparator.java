@@ -1,4 +1,8 @@
 package com.zipcodewilmington.assessment2.part3;
 
-public class SpeedComparator {
+import java.util.Comparator;
+
+public class SpeedComparator  {
+    //public int sort(Comparator)
+
 }
