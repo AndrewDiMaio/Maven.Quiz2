@@ -2,6 +2,7 @@ package com.zipcodewilmington.assessment2.part2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayUtility {
@@ -14,11 +15,13 @@ public class ArrayUtility {
     }
 
     public Integer[] rotate(Integer[] array, Integer index) {
-        //List<Object> newList = new ArrayList<>(Arrays.asList(array));
-        //Integer[] finalList = newList.toArray(new Integer[0]);
-        //return finalList;
+        Collections.rotate(Arrays.asList(array), 5-index);
+        for (int i = 0; i<5; i++){
+            System.out.println(array[i]);
+        }
 
-        return null;
+
+        return array;
     }
 
     public Integer countOccurrence(Integer[] array1, Integer[] array2, Integer valueToEvaluate) {
